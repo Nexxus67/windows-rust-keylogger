@@ -1,0 +1,18 @@
+[package]
+name = "medieval-calculator"  
+version = "0.1.0"
+edition = "2021" 
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "winreg", "libloaderapi", "winnt"] }
+aes-gcm = "0.10.0"
+base64 = "0.13"
+rand = "0.8"
+lazy_static = "1.4"
+screenshots = "0.4"
+generic-array = "0.14"
+
+tokio = { version = "1", features = ["full"] }
+[build-dependencies]
+bindgen = "0.59.0"
+
